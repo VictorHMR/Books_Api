@@ -11,6 +11,8 @@ router.post('/insert', controller.insertBook)
 router.delete('/delete', controller.deleteBook)
 router.put('/put', controller.updateBook)
 
+
+/* Como não entendi muito bem a questão 2, criei uma rota separada para ela*/
 router.get("/books", controller.getGoogleBooks)
 
 

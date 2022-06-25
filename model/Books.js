@@ -66,10 +66,9 @@ async function putM (id, nome, autor, editora, data, descrição) {
     return false
   }
 }
-
+/* Realizei a Requisição utilizando axios para facilitar a implementação e retornei apenas as informações relevantes dos livros utilizando o .map()*/
 async function getGoogleBooks (name) {
   var cont = 0
- 
   return  axios
     .get(`https://www.googleapis.com/books/v1/volumes?q=${name}&printType=books&_limit=10`)
     .then(data => {

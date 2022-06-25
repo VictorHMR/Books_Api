@@ -49,6 +49,8 @@ async function updateBook(req, res) {
 
 }
 
+
+/* Para a questão 2, resolvi utilizar o Google Books API para fazer uma pesquisa passada pelo usuário sobre livros*/
 async function getGoogleBooks(req, res){
   var data = req.query.name
   var qnt = await Books.getGoogleBooks(data)
