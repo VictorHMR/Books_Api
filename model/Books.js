@@ -2,6 +2,7 @@ import * as fs from 'fs'
 import axios from 'axios'
 var database = './data/books.json'
 
+
 async function getAllBook () {
   return JSON.parse(await fs.promises.readFile(database))
 }
@@ -18,17 +19,10 @@ async function searchBookName (name) {
   return result
 }
 
-async function insert (id, nome, autor, editora, data, descrição) {
+async function insert (newBook) {
   var all = JSON.parse(await fs.promises.readFile(database))
-  if (all.filter(book => book.id == id).length <= 0) {
-    all.push({
-      id: id,
-      nome: nome,
-      autor: autor,
-      editora: editora,
-      data: data,
-      descrição: descrição
-    })
+  if (all.filter(book => book.id == newBook.id).length <= 0) {
+    all.push(newBook)
     fs.promises.writeFile(database, JSON.stringify(all, null, 2))
     return true
   } else {
@@ -47,17 +41,17 @@ async function deleteM (id) {
   }
 }
 
-async function putM (id, nome, autor, editora, data, descrição) {
+async function putM (modifyBook) {
   var all = JSON.parse(await fs.promises.readFile(database))
-  var oldM = all.filter(book => book.id == parseInt(id))
+  var oldM = all.filter(book => book.id == modifyBook.id)
   if (oldM != '') {
     all.forEach(e => {
-      if (e.id == id) {
-        e.nome = nome
-        e.autor = autor
-        e.editora = editora
-        e.data = data
-        e.descrição = descrição
+      if (e.id == modifyBook.id) {
+        e.nome = modifyBook.nome
+        e.autor = modifyBook.autor
+        e.editora = modifyBook.editora
+        e.data = modifyBook.data
+        e.descrição = modifyBook.descrição
       }
     })
     fs.promises.writeFile(database, JSON.stringify(all, null, 2))
@@ -68,7 +62,7 @@ async function putM (id, nome, autor, editora, data, descrição) {
 }
 /* Realizei a Requisição utilizando axios para facilitar a implementação e retornei apenas as informações relevantes dos livros utilizando o .map()*/
 async function getGoogleBooks (name) {
-  var cont = 0
+  
   return  axios
     .get(`https://www.googleapis.com/books/v1/volumes?q=${name}&printType=books&_limit=10`)
     .then(data => {
