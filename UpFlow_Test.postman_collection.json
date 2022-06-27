@@ -1,0 +1,435 @@
+{
+	"info": {
+		"_postman_id": "9c5e7c30-7c6e-4f4d-95e7-9cd11528eb49",
+		"name": "UpFlow_Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21638676"
+	},
+	"item": [
+		{
+			"name": "Inserts",
+			"item": [
+				{
+					"name": "Insert",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id",
+									"value": "8cESU6jXAOgC",
+									"type": "text"
+								},
+								{
+									"key": "nome",
+									"value": "Os arquivos do semideus",
+									"type": "text"
+								},
+								{
+									"key": "autor",
+									"value": "Rick Riordan",
+									"type": "text"
+								},
+								{
+									"key": "editora",
+									"value": "Editora Intrinseca",
+									"type": "text"
+								},
+								{
+									"key": "data",
+									"value": "2011-12-15",
+									"type": "text"
+								},
+								{
+									"key": "descrição",
+									"value": "Atenção jovens semideuses: preparem-se para ter acesso a arquivos altamente sigilosos. Compilado pelo escriba sênior do Acampamento Meio-Sangue, o sr. Rick Riordan, o conteúdo supersecreto apresentado em Os arquivos do semideus inclui os relatórios de três das mais perigosas aventuras de Percy Jackson, informações valiosas conseguidas em entrevistas com os mais importantes heróis da saga, um utilíssimo mapa do acampamento e muito, muito mais. Leiam e tornem-se especialistas no universo dos deuses e heróis do Olimpo.",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:6100/insert",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6100",
+							"path": [
+								"insert"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Insert2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id",
+									"value": "za4sPwAACAAJ",
+									"type": "text"
+								},
+								{
+									"key": "nome",
+									"value": "Harry Potter e as relíquias da morte",
+									"type": "text"
+								},
+								{
+									"key": "autor",
+									"value": "J. K. Rowling , Lia Wyler",
+									"type": "text"
+								},
+								{
+									"key": "editora",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "data",
+									"value": "2007",
+									"type": "text"
+								},
+								{
+									"key": "descrição",
+									"value": "Harry Potter e as relíquias da morte', de J.K. Rowling, é o sétimo e último livro da série. Voldemorte está cada vez mais forte e Harry Potter precisa encontrar e aniquilar as Horcruxes para enfraquecer o lorde e poder enfrentá-lo. Nessa busca desenfreada, contando apenas com os amigos Rony e Hermione, Harry descobre as Relíquias da Morte, que serão úteis na batalha do bem contra o mal.",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:6100/insert",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6100",
+							"path": [
+								"insert"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Deletes",
+			"item": [
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id",
+									"value": "8cESU6jXAOgC",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:6100/delete",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6100",
+							"path": [
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete2",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id",
+									"value": "za4sPwAACAAJ",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:6100/delete",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6100",
+							"path": [
+								"delete"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Put",
+			"item": [
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id",
+									"value": "1001",
+									"type": "text"
+								},
+								{
+									"key": "nome",
+									"value": "PJO",
+									"type": "text"
+								},
+								{
+									"key": "autor",
+									"value": "Rick Riordan",
+									"type": "text"
+								},
+								{
+									"key": "editora",
+									"value": "Editora Intrinseca",
+									"type": "text"
+								},
+								{
+									"key": "data",
+									"value": "2011-12-15",
+									"type": "text"
+								},
+								{
+									"key": "descrição",
+									"value": "Uma descrição",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:6100/put",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6100",
+							"path": [
+								"put"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update2",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "id",
+									"value": "1002",
+									"type": "text"
+								},
+								{
+									"key": "nome",
+									"value": "HP",
+									"type": "text"
+								},
+								{
+									"key": "autor",
+									"value": "J.K. Rowling",
+									"type": "text"
+								},
+								{
+									"key": "editora",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "data",
+									"value": "2007",
+									"type": "text"
+								},
+								{
+									"key": "descrição",
+									"value": "Uma descrição",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:6100/put",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6100",
+							"path": [
+								"put"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Get",
+			"item": [
+				{
+					"name": "ParamName",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:6100/Get/PJO",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6100",
+							"path": [
+								"Get",
+								"PJO"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ParamName2",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:6100/Get/HP",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6100",
+							"path": [
+								"Get",
+								"HP"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "QueryID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:6100/Query?id=8cESU6jXAOg",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6100",
+							"path": [
+								"Query"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "8cESU6jXAOg"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "QueryID2",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:6100/Query?id=1002",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6100",
+							"path": [
+								"Query"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1002"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "GoogleBooks(API)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:6100/books?name=H",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6100",
+					"path": [
+						"books"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "H"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List All",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:6100",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6100"
+				}
+			},
+			"response": []
+		}
+	]
+}

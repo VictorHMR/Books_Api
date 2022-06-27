@@ -1,14 +1,15 @@
 import express from "express";
 import bodyParser from "body-parser";
-import itemRouter from "./routes/Router_books.js"
+import Router from "./src/routes/Router_books.js"
 
-
+var port = 6100;
 const app = express();
 app.use(bodyParser.urlencoded({extended: false}))
 app.use(bodyParser.json())
-app.use(itemRouter.router);
+app.use(Router.router);
 
-app.listen(6100, ()=>{
-  console.log("App rodando na porta: http://localhost:6100")
+
+app.listen(port, ()=>{
+  console.log(`App rodando Em: http://localhost:${port}`)
 })
 

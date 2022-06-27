@@ -1,6 +1,6 @@
 import * as fs from 'fs'
 import axios from 'axios'
-var database = './data/books.json'
+var database = './src/data/books.json'
 
 
 async function getAllBook () {
@@ -8,15 +8,13 @@ async function getAllBook () {
 }
 
 async function searchBookId (id) {
-  var all = JSON.parse(await fs.promises.readFile(database))
-  var result = all.filter(book => book.id === id)
-  return result
+  return JSON.parse(await fs.promises.readFile(database)).filter(book => book.id === id)
+   
 }
 
 async function searchBookName (name) {
   var all = JSON.parse(await fs.promises.readFile(database))
-  var result = all.filter(book => book.nome.toLowerCase() == name.toLowerCase())
-  return result
+  return all.filter(book => book.nome.toLowerCase() == name.toLowerCase())
 }
 
 async function insert (newBook) {

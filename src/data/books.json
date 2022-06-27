@@ -1,0 +1,18 @@
+[
+  {
+    "id": "1001",
+    "nome": "PJO",
+    "autor": "Rick Riordan",
+    "editora": "Editora Intrinseca",
+    "data": "2011-12-15",
+    "descrição": "Uma descrição"
+  },
+  {
+    "id": "1002",
+    "nome": "HP",
+    "autor": "J.K. Rowling",
+    "editora": "",
+    "data": "2007",
+    "descrição": "Uma descrição"
+  }
+]
