@@ -1,5 +1,13 @@
 [
   {
+    "id": "6R5XCabaEd4C",
+    "nome": "O herói perdido",
+    "autor": "Rick Riordan",
+    "editora": "Editora Intrinseca",
+    "data": "2011-12-15",
+    "descrição": "Novos e conhecidos personagens do Acampamento Meio-Sangue dividem espaço nesse primeiro volume da série Os heróis do Olimpo. Rick Riordan volta ao universo de Percy Jackson e os Olimpianos com ainda mais aventuras, humor e mistério. Depois de salvar o Olimpo do maligno titã Cronos, Percy Jackson e seus amigos trabalharam duro para reconstruir seu mais querido refúgio, o Acampamento Meio-Sangue. É lá que a próxima geração de semideuses terá de se preparar para enfrentar uma nova e aterrorizante profecia. Os campistas seguirão firmes na inevitável jornada, mas, para sobreviver, precisarão contar com a ajuda de alguns heróis, digamos, um pouco mais experientes - semideuses dos quais todos já ouvimos falar... e muito."
+  },
+  {
     "id": "1001",
     "nome": "PJO",
     "autor": "Rick Riordan",
@@ -14,5 +22,13 @@
     "editora": "",
     "data": "2007",
     "descrição": "Uma descrição"
+  },
+  {
+    "id": "1004",
+    "nome": "sl",
+    "data": "2010-11-01",
+    "editora": "Intrínseca",
+    "descrição": "O Box reúne os cinco livros da série.",
+    "autor": "irineu"
   }
 ]

@@ -62,7 +62,7 @@ async function putM (modifyBook) {
 async function getGoogleBooks (name) {
   
   return  axios
-    .get(`https://www.googleapis.com/books/v1/volumes?q=${name}&printType=books&_limit=10`)
+    .get(`https://www.googleapis.com/books/v1/volumes?q=${name}+intitle&printType=books&maxResults=40`)
     .then(data => {
       var request = []
       var books = data.data.items
@@ -81,6 +81,19 @@ async function getGoogleBooks (name) {
     })
 }
 
+async function verifyLocal(GList){
+  var books = [];
+  var allLocal = JSON.parse(await fs.promises.readFile(database))
+  allLocal.forEach(localBook => {
+    GList.forEach(gbook => {
+      if(localBook.nome == gbook.nome){
+        books.push(gbook)
+      }
+    });
+  });
+  return books
+}
+
 export default {
   getAllBook,
   searchBookId,
@@ -88,5 +101,6 @@ export default {
   insert,
   deleteM,
   putM,
-  getGoogleBooks
+  getGoogleBooks,
+  verifyLocal
 }

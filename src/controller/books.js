@@ -56,8 +56,9 @@ porém apenas era enviado como resposta a primeira vez*/
 
 async function getGoogleBooks (req, res) {
   var data = req.query.name
-  var qnt =await Books.getGoogleBooks(data)
-  res.status(201).json({ Quantidade: qnt.length, Books: qnt })
+  var Gbooks = await Books.getGoogleBooks(data)
+  var inBD = await Books.verifyLocal(Gbooks)
+  res.status(201).json({Possui: inBD.length, Pesquisado: Gbooks.length, GoogleBooks: Gbooks })
 }
 
 export default {

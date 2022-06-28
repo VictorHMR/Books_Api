@@ -1,9 +1,9 @@
 # Como Executar ?
 ### 1) Instalar os Modulos necessários(Listados no Package.json)
 
-### 2) Basta usar o Node ou Nodemon para executar o index e pronto ! todos os testes podem ser Feitos via postman mesmo, porém utilizei o método send() para caso seja feito na web
+### 2) Basta usar o comando `npm start` ou executar o index ! todos os testes podem ser Feitos via postman mesmo, porém utilizei o método send() para caso seja feito na web
 
-### 3) Os inserts, Deletes e Updates podem ser vistos Em tempo real, basta abrir o arquivo `data/books.json` em um editor de código como VSCode ou Atom e executar as requisições no PostMan
+### 3) Os inserts, Deletes e Updates podem ser vistos Em tempo real, basta abrir o arquivo `src/data/books.json` em um editor de código como VSCode ou Atom e executar as requisições no PostMan
 
 
 # Rotas
@@ -21,12 +21,12 @@
 #### A rota de deleção de dados é acessada através da rota `http://localhost:6100/delete` e basta passar o id através do metódo DELETE
 
 ### Rota Exercício 2)
-#### - Para acessar a questão número 2 deve-se acessar a rota `http://localhost:6100/books?` e enviar como query param o nome de um livro para ser pesquisado na base de dados do Google Books diáriamente. 
+#### - Para acessar a questão número 2 deve-se acessar a rota `http://localhost:6100/books?` e enviar como query param o nome de um livro para ser pesquisado na base de dados do Google Books e verificar quantos desses pesquisados existem no banco de dados local. 
 
 
 
 # Sobre a API
-#### Como o tema da api era livre, resolvi fazer uma api sobre livros, por ser algo que na minha opinião têm sumido cada vez mais na sociedade devido a modernização, para isso fiz uma api para gerenciar os livros de uma coleção, além disso também é possivel consultar livros disponíveis na playstore com a Api que usei para a segunda questão, o Google Books API 
+#### Como o tema da api era livre, resolvi fazer uma api sobre livros, por ser algo que na minha opinião têm sumido cada vez mais na sociedade devido a modernização, para isso fiz uma api para gerenciar os livros de uma coleção, além disso também é possivel consultar livros disponíveis na playstore com a Api que usei para a segunda questão, o Google Books API.
 
 
 # Observações
@@ -36,4 +36,4 @@
 
 #### - Foi dito para usar um array no inicio do controller porém achei que seria mais dinâmico utilizar um arquivo json para simular um banco de dados
 
-#### - Não entendi muito bem a parde de criar uma rotina que executa diariamente uma consulta, então apenas fiz uma função que realiza a consulta.
+#### - Não entendi muito bem a parte de criar uma rotina que executa diariamente uma consulta, então apenas fiz uma função que realiza a consulta.
